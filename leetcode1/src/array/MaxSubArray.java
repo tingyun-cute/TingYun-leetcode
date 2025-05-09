@@ -1,15 +1,16 @@
 package array;
 
 public class MaxSubArray {
+
     public int maxSubArray(int[] nums) {
-        int maxCurrent = nums[0];
-        int maxGlobal = nums[0];
-
-        for (int i = 1; i < nums.length; i++) {
-            maxCurrent = Math.max(nums[i], maxCurrent + nums[i]);
-            maxGlobal = Math.max(maxGlobal, maxCurrent);
+        if (nums == null || nums.length == 0) {
+            return 0;
         }
+        int len = nums.length;
+        int res = Integer.MIN_VALUE;
+        for (int i = 0; i < len; i++) {
 
-        return maxGlobal;
+        }
+        return 1;
     }
 }
